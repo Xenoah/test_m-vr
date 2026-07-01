@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XenuyuVR ｜ チル・ゲーム対応 VRSNS</title>
+  <meta name="description" content="XenuyuVR（ゼヌユVR）公式案内。Basis 製のチル・ゲーム対応 VRSNS。ゆったり過ごせる空間と、みんなで遊べるネットワーク体験を。">
+  <meta name="theme-color" content="#0b0a1a">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="XenuyuVR ｜ チル・ゲーム対応 VRSNS">
+  <meta property="og:description" content="見えざる神メジェドに導かれる、チル・ゲーム対応の VRSNS。">
+  <meta property="og:site_name" content="XenuyuVR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Serif+JP:wght@400;600;700&family=Zen+Old+Mincho:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- 背景装飾 -->
+  <div class="stars" aria-hidden="true"></div>
+  <div class="glyph-rain" aria-hidden="true"></div>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">𓂀</span>
+      <span class="brand-name">XenuyuVR</span>
+    </a>
+    <nav class="site-nav" aria-label="メインナビゲーション">
+      <a href="#about">概要</a>
+      <a href="#features">機能</a>
+      <a href="#setup">開発者向け</a>
+      <a href="#terms">利用規約</a>
+      <a class="nav-cta" href="https://github.com/Xenoah/Basis_XenuyuVR/releases" target="_blank" rel="noopener">ダウンロード</a>
+    </nav>
+    <button class="nav-toggle" aria-label="メニュー" aria-expanded="false">☰</button>
+  </header>
+
+  <!-- ヒーロー -->
+  <section class="hero" id="top">
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <!-- メジェド -->
+    <div class="medjed" aria-hidden="true">
+      <div class="medjed-halo"></div>
+      <svg viewBox="0 0 200 240" class="medjed-svg" role="img" aria-label="謎の神メジェド">
+        <defs>
+          <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#fff7d6"/>
+            <stop offset="45%" stop-color="#ffd45e"/>
+            <stop offset="100%" stop-color="#b8860b" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="sheet" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#cfd6e6"/>
+          </linearGradient>
+        </defs>
+        <!-- 体（シーツ） -->
+        <path d="M100 18
+                 C56 18 34 58 34 110
+                 L34 196
+                 C34 202 40 206 46 202
+                 L58 194 L72 204 L86 194 L100 204
+                 L114 194 L128 204 L142 194 L154 202
+                 C160 206 166 202 166 196
+                 L166 110
+                 C166 58 144 18 100 18 Z"
+              fill="url(#sheet)" stroke="#aeb6c8" stroke-width="1.5"/>
+        <!-- 目 -->
+        <g class="medjed-eyes">
+          <circle cx="78" cy="118" r="16" fill="url(#eyeGlow)"/>
+          <circle cx="122" cy="118" r="16" fill="url(#eyeGlow)"/>
+          <circle cx="78" cy="118" r="6.5" fill="#2b1d5a"/>
+          <circle cx="122" cy="118" r="6.5" fill="#2b1d5a"/>
+        </g>
+        <!-- 足 -->
+        <rect x="74" y="206" width="14" height="28" rx="6" fill="url(#sheet)" stroke="#aeb6c8" stroke-width="1.2"/>
+        <rect x="112" y="206" width="14" height="28" rx="6" fill="url(#sheet)" stroke="#aeb6c8" stroke-width="1.2"/>
+      </svg>
+    </div>
+
+    <p class="hero-kicker">見えざる神に導かれて</p>
+    <h1 class="hero-title">XenuyuVR</h1>
+    <p class="hero-sub">チル・ゲーム対応 VRSNS</p>
+    <p class="hero-lead">
+      ゆったり過ごせる空間づくりと、みんなで遊べるネットワーク体験。<br>
+      交流・アバター表現・ワールド体験・ゲーム的インタラクションを組み合わせて。
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://github.com/Xenoah/Basis_XenuyuVR/releases" target="_blank" rel="noopener">ダウンロード（Windows）</a>
+      <a class="btn btn-ghost" href="https://github.com/Xenoah/MedjedVR" target="_blank" rel="noopener">GitHub を見る</a>
+    </div>
+    <p class="hero-note">Built with <strong>Basis</strong> — オープンソースの Social VR フレームワーク</p>
+  </section>
+
+  <!-- 区切り -->
+  <div class="divider" aria-hidden="true"><span>𓆓 𓁟 𓆳 𓁟 𓆓</span></div>
+
+  <!-- 概要 -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="eyebrow">概要 / OVERVIEW</p>
+      <h2 class="section-title">自然と人が集まる、冥き夜の広間</h2>
+      <p class="section-lead">
+        XenuyuVR は、Social VR / Networked VR の仕組みを活用し、ユーザー同士が自然に集まり、
+        話し、遊び、表現できる場所を作るためのプロジェクトです。
+      </p>
+      <div class="cards">
+        <article class="card reveal">
+          <span class="card-glyph">𓉔</span>
+          <h3>チルできる体験</h3>
+          <p>喧噪から離れ、ゆったり過ごせるソーシャル VR 空間。思い思いの時間を。</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-glyph">𓊹</span>
+          <h3>ゲーム・ミニゲーム</h3>
+          <p>ネットワーク対応のゲーム体験。みんなで遊べる仕掛けを組み込みます。</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-glyph">𓁐</span>
+          <h3>アバター表現</h3>
+          <p>アバターとワールドを中心にしたコミュニケーション設計。</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-glyph">𓂀</span>
+          <h3>拡張しやすい構成</h3>
+          <p>日本語ユーザーにも使いやすい、SNS 的な体験を目指した拡張性。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 機能 / 実装予定 -->
+  <section class="section section-alt" id="features">
+    <div class="section-inner">
+      <p class="eyebrow">機能 / 実装予定</p>
+      <h2 class="section-title">これから刻まれる呪文の数々</h2>
+      <p class="section-lead">『死者の書』に呪文が加えられていくように、機能は少しずつ増えていきます。</p>
+      <ul class="feature-grid">
+        <li class="reveal"><span class="fg-glyph">𓏛</span><span>ペン</span></li>
+        <li class="reveal"><span class="fg-glyph">𓊖</span><span>使いやすい動画プレーヤー</span></li>
+        <li class="reveal"><span class="fg-glyph">𓏤</span><span>カラオケ向け遅延調整</span></li>
+        <li class="reveal"><span class="fg-glyph">𓁹</span><span>フェイスミラー</span></li>
+        <li class="reveal"><span class="fg-glyph">𓀠</span><span>姿勢変更ツール</span></li>
+        <li class="reveal"><span class="fg-glyph">𓄿</span><span>撫で音</span></li>
+        <li class="reveal"><span class="fg-glyph">𓋹</span><span>VRM アバター変換</span></li>
+        <li class="reveal"><span class="fg-glyph">𓉐</span><span>チルワールド</span></li>
+        <li class="reveal"><span class="fg-glyph">𓊛</span><span>ゲームワールド</span></li>
+      </ul>
+      <p class="feature-note">※ 実装予定は開発状況により変更される場合があります。</p>
+    </div>
+  </section>
+
+  <!-- 開発者向けセットアップ -->
+  <section class="section" id="setup">
+    <div class="section-inner">
+      <p class="eyebrow">開発者向け / SETUP</p>
+      <h2 class="section-title">聖域への入り方</h2>
+      <p class="section-lead">
+        このリポジトリは Unity プロジェクトを含みます。Unity Hub では
+        <strong>ルートではなく Unity プロジェクト本体のフォルダー</strong>を開いてください。
+      </p>
+
+      <div class="setup-grid">
+        <div class="setup-req reveal">
+          <h3>必要環境</h3>
+          <ul>
+            <li>Git</li>
+            <li>Unity Hub</li>
+            <li>Unity <code>6000.5.1f1</code></li>
+            <li>Windows Build Support / IL2CPP Support</li>
+          </ul>
+        </div>
+        <div class="setup-steps reveal">
+          <h3>初回セットアップ</h3>
+          <ol>
+            <li>リポジトリを clone する</li>
+            <li>Unity Hub でプロジェクト本体フォルダーを開く</li>
+            <li>初回インポートの完了を待つ</li>
+            <li>起動シーン <code>initialization.unity</code> を開く</li>
+            <li>Play モードで起動確認する</li>
+          </ol>
+        </div>
+      </div>
+
+      <pre class="code-block reveal"><code>git clone https://github.com/Xenoah/XenuyuVR.git
+cd Basis_XenuyuVR
+# Unity Hub でプロジェクト本体フォルダーを開く</code></pre>
+
+      <p class="setup-more">
+        詳細な手順（Windows ビルド・起動オプション等）は
+        <a href="https://github.com/Xenoah/MedjedVR" target="_blank" rel="noopener">本体リポジトリの README</a>
+        を参照してください。
+      </p>
+    </div>
+  </section>
+
+  <!-- 利用規約 -->
+  <section class="section section-alt" id="terms">
+    <div class="section-inner">
+      <p class="eyebrow">利用規約 / RULES</p>
+      <h2 class="section-title">マアトの秤 — 守るべき理</h2>
+      <div class="terms-box reveal">
+        <p>
+          成人向けコンテンツは、関係するすべての参加者が<strong>成人であり、内容を理解したうえで明確に同意している場合のみ</strong>許可されます。
+        </p>
+        <p>
+          同意のない成人向け表現、未成年が関係する成人向け表現、強要・嫌がらせ・なりすまし・無断撮影や無断共有を含む行為は<strong>禁止</strong>します。
+        </p>
+        <p>
+          各ユーザーは、自分が参加する地域の法律、プラットフォーム規約、サーバーやワールドごとのルールを守る必要があります。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-inner reveal">
+      <span class="cta-glyph" aria-hidden="true">𓂀</span>
+      <h2>冥き夜の広間で会いましょう</h2>
+      <p>見えざる神メジェドが、あなたの訪れを待っています。</p>
+      <a class="btn btn-primary" href="https://github.com/Xenoah/Basis_XenuyuVR/releases" target="_blank" rel="noopener">ダウンロード（Windows）</a>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">𓂀</span>
+        <span>XenuyuVR</span>
+      </div>
+      <nav class="footer-links" aria-label="フッターリンク">
+        <a href="https://github.com/Xenoah/MedjedVR" target="_blank" rel="noopener">本体リポジトリ</a>
+        <a href="https://github.com/Xenoah/Basis_XenuyuVR/releases" target="_blank" rel="noopener">ダウンロード</a>
+        <a href="#about">概要</a>
+        <a href="#terms">利用規約</a>
+      </nav>
+      <p class="footer-note">
+        XenuyuVR は Basis フレームワーク上に構築されています。<br>
+        テーマ: 古代エジプト『死者の書』の謎の神 <strong>メジェド</strong>。
+      </p>
+      <p class="copyright">© 2026 XenuyuVR / Xenoah</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
